@@ -9,11 +9,11 @@ function Header() {
         </h1>
         <nav>
           <ul className="flex space-x-4">
-            <li className="hover:text-yellow-300 transition duration-300">
-              <a href="#" className="font-medium">Recipes</a>
+            <li>
+              <a href="#" className="font-medium hover:text-blue-200 transition-colors">Recipes</a>
             </li>
-            <li className="hover:text-yellow-300 transition duration-300">
-              <a href="#" className="font-medium">About</a>
+            <li>
+              <a href="#" className="font-medium hover:text-blue-200 transition-colors">About</a>
             </li>
           </ul>
         </nav>

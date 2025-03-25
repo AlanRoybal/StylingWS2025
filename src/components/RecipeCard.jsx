@@ -4,7 +4,7 @@ function RecipeCard({ title, description, ingredients, imageUrl }) {
   const [showIngredients, setShowIngredients] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
       <img 
         src={imageUrl} 
         alt={title} 
@@ -28,7 +28,7 @@ function RecipeCard({ title, description, ingredients, imageUrl }) {
         </button>
 
         {showIngredients && (
-          <ul className="mt-4 space-y-2 text-gray-700">
+          <ul className="mt-4 space-y-2 text-gray-700 animate-fade-in">
             {ingredients.map((ingredient, index) => (
               <li 
                 key={index} 
