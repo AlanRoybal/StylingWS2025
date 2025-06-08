@@ -5,10 +5,10 @@ function RecipeCard({ title, description, ingredients, imageUrl }) {
   const [showIngredients, setShowIngredients] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-      <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+    <div className="bg-white shadow-lg">
+      <img src={imageUrl} alt={title} className="w-full h-48 " />
       <div className="p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">{title}</h2>
+        <h2 className="text-2xl mb-2">{title}</h2>
         <p className="text-gray-600 mb-4">{description}</p>
 
         <button
@@ -23,7 +23,7 @@ function RecipeCard({ title, description, ingredients, imageUrl }) {
   `}
         >
           {showIngredients ? "Hide Ingredients" : "Show Ingredients"}
-          {showIngredients ? <FaChevronUp /> : <FaChevronDown />}
+          {showIngredients ? "       >" : "       <"}
         </button>
 
         {showIngredients && (
@@ -33,7 +33,7 @@ function RecipeCard({ title, description, ingredients, imageUrl }) {
                 key={index}
                 className="flex items-center space-x-2 bg-gray-100 p-2 rounded"
               >
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
                 <span>{ingredient}</span>
               </li>
             ))}
