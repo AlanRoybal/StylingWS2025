@@ -1,9 +1,10 @@
-#concepts covered
-##flex
-##on hover effects
-##drop shadows
-##color palettes and continuity
-##icon libraries
-##images and object cover
-##fonts and bolding
-##referencing professional website for inspiration
+# Concepts Covered
+
+- **Flexbox Layouts**
+- **Hover Effects**
+- **Drop Shadows**
+- **Color Palettes & Visual Continuity**
+- **Using Icon Libraries**
+- **Working with Images & `object-cover`**
+- **Fonts & Text Styling (Bold, Weight, etc.)**
+- **Referencing Professional Websites for Design Inspiration**
